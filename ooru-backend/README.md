@@ -96,7 +96,28 @@ Requires Docker and Docker Compose.
 docker-compose up --build
 ```
 
-This starts Postgres (seeded with `database/schema.sql`) and the backend on `http://localhost:8080`.
+## Running the Project
+
+### Local Development
+
+Requirements:
+
+- Java 17
+- Maven
+- Docker & Docker Compose (optional)
+- PostgreSQL
+
+Start locally:
+
+```bash
+docker-compose up --build
+```
+
+Backend:
+https://altenulone-backend.onrender.com
+
+Frontend:
+http://localhost:5173
 
 Without Docker, you need Java 17, Maven, and a local Postgres instance matching the
 `DB_HOST`/`DB_NAME`/`DB_USER`/`DB_PASSWORD` in `application.yml`, then:

@@ -2,7 +2,7 @@ import { Client } from '@stomp/stompjs';
 import SockJS from 'sockjs-client';
 
 // The WebSocket endpoint lives at the backend's root (/ws), not under /api like everything else.
-const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080/api';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || 'https://altenulone-backend.onrender.com/api';
 const WS_BASE = API_BASE.replace(/\/api\/?$/, '');
 
 /**

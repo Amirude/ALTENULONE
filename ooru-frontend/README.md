@@ -8,7 +8,7 @@ README flagged as missing.
 
 2. Get `../ooru-backend` running first (see its own README) — this app has nothing to talk to
    without it.
-3. `cp .env.example .env` and fill in `VITE_API_BASE_URL` (defaults to `http://localhost:8080/api`,
+3. `cp .env.example .env` and fill in `VITE_API_BASE_URL` (defaults to `https://altenulone-backend.onrender.com/api`,
    which matches the backend's default Docker Compose setup) and `VITE_RAZORPAY_KEY_ID` (your
    Razorpay *public* key id — safe to expose in frontend code, unlike the secret key).
    Push notifications need the `VITE_FIREBASE_*` variables too — see "Notifications" below.
